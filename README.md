@@ -1,20 +1,32 @@
-i3blocks-openweather is an i3blocks blocklet script to output the current weather type and temperature.
+## i3blocks-openweather
 
-Dependencies: fonts-font-awesome, python3, pyowm
+Is a i3blocks blocklet script to output the current weather type and temperature.
 
-Suggested: i3 ( >= 4.3 ), i3blocks ( >= 1.4 )
+### Dependecies
+* fonts-font-awesome
+* python3
+* pyowm
 
-It looks like this:
+### Suggested
+* i3 ( >= 4.3 )
+* i3blocks ( >= 1.4 )
+
+### Appearance
 
 ![](https://raw.githubusercontent.com/p-hash/i3blocks-openweather/master/images/1.png)
 
-To use with i3blocks, copy the blocklet configuration in the given `i3blocks.conf` into your i3blocks configuration file, the recommended config is
+### Usage
+1. Clone repo
+2. Add your `api_key` to `weather.py`. If you dont have an `api_key`, get it [here](http://openweathermap.org/appid).
+3. Copy `i3blocks.conf` contents into your i3blocks configuration file.
+4. Replace `5128638` with your city ID. 
+List of city ID city.list.json.gz can be downloaded [here](http://bulk.openweathermap.org/sample/)
 
+### Example config for New York
 ```INI
 [weather]
 command=$SCRIPT_DIR/weather.py
 markup=pango
-# instance=CITYID
 instance=5128638
 interval=3600
 ```

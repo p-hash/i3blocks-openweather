@@ -57,12 +57,7 @@ else:
     # Unknown
     text += FA_UNLINK
 
-if temp > 0:
-    text += ' '
-if abs(temp) < 10:
-    text += ' '
-
-text += str(round(temp)) 
+text += str(round(temp)).rjust(3) 
 # Degree symbol
 text += '\u00b0'
 

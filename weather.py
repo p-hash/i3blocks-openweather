@@ -8,7 +8,7 @@ from pyowm import OWM
 # Set the api key before using this script
 api_key = "YOUR OPEN_WEATHER_MAP API_KEY"
 
-FA_SUN = "<span font='FontAwesome'>\uf185</span>"
+FA_SUN = "<span font='FontAwesome'>\uf0a3</span>"
 FA_MOON = "<span font='FontAwesome'>\uf186</span>"
 FA_CLOUD = "<span font='FontAwesome'>\uf0c2</span>"
 FA_UMBRELLA = "<span font='FontAwesome'>\uf0e9</span>"
